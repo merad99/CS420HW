@@ -24,5 +24,4 @@ def printAllRec(set, prefix, n, k):
         printAllRec(set, newPrefix, n, k - 1)
 
 inp = input()
-print()
 printAll(inp, 3)
