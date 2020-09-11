@@ -9,6 +9,8 @@ def print_powerset(string):
         for element in combinations(string, i):
             print(' '.join(element))
 
-
-inp = input()
-print_powerset(inp.replace(" ", ""))
+try:
+    inp = input()
+    print_powerset(inp.replace(" ", ""))
+except EOFError:
+    pass

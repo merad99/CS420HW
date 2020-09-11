@@ -23,5 +23,8 @@ def printAllRec(set, prefix, n, k):
         # k is decreased
         printAllRec(set, newPrefix, n, k - 1)
 
-inp = input()
-printAll(inp, 3)
+try:
+    inp = input()
+    printAll(inp.replace(" ", ""), 3)
+except EOFError:
+    pass
