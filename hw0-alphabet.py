@@ -1,7 +1,5 @@
 # program to print all possible strings of length k using recursive method
 
-import sys
-
 def printAll(set, k):
 
     n = len(set)
