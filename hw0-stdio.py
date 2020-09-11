@@ -2,7 +2,7 @@ import sys
 try:
     inp = input()
     for i in range(3):
-        print(inp, end='\n\n')
+        print(inp)
 except EOFError:
     pass
 

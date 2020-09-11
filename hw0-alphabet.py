@@ -26,5 +26,5 @@ def printAllRec(set, prefix, n, k):
 try:
     inp = input()
     printAll(inp.replace(" ", ""), 3)
-except EOFError:
+except:
     pass

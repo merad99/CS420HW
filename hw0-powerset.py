@@ -12,5 +12,5 @@ def print_powerset(string):
 try:
     inp = input()
     print_powerset(inp.replace(" ", ""))
-except EOFError:
+except:
     pass
