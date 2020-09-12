@@ -1,6 +1,6 @@
 try:
     inp = input()
-    if len(inp) == 0:
+    if inp == "":
         print()
     else:
        for i in range(3):
