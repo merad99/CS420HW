@@ -1,11 +1,10 @@
 try:
     inp = input()
-    if inp == "":
-        print()
+    if len(inp) == 0:
+        for i in range(3):
+            print()
     else:
-       for i in range(3):
+        for i in range(3):
             print(inp)
 except EOFError:
     pass
-
-
