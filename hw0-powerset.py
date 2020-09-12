@@ -1,21 +1,17 @@
+
 # program to print the power set of the input set
-import math 
 
-def printPowerSet(set): 
-    set_size = len(set)
-    pow_set_size = (int) (math.pow(2, set_size)) 
-    counter = 0 
-    j = 0 
+from itertools import combinations
 
-    for counter in range(1, pow_set_size): 
-        for j in range(0, set_size):       
-            if((counter & (1 << j)) > 0): 
-                print(set[j], end = " ") 
-        print() 
+
+def print_powerset(set):
+    for i in range(0, len(set)+1):
+        for element in combinations(set, i):
+            print(' '.join(element))
+
 
 try:
     inp = input()
-    a = list(inp.split(" "))
-    printPowerSet(a)
-except EOFError:
+    print_powerset(inp.replace(" ", ""))
+except:
     pass
