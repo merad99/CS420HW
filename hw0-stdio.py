@@ -1,8 +1,12 @@
 import sys
 try:
     msg = sys.stdin.readlines()
-    for item in msg:
+    if (len(msg) == 0):
         for i in range(3):
-            print(item)
+            print()
+    else:
+        for item in msg:
+            for i in range(3):
+                print(item)
 except:
     pass
