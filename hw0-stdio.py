@@ -1,6 +1,8 @@
+import sys
 try:
-    inp = input()
-    for i in range(3):
-        print(inp)
-except EOFError:
+    msg = sys.stdin.readlines()
+    for item in msg:
+        for i in range(3):
+            print(item)
+except:
     pass

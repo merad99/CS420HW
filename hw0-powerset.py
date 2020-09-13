@@ -2,7 +2,7 @@
 # program to print the power set of the input set
 
 from itertools import combinations
-
+import sys
 
 def print_powerset(set):
     for i in range(0, len(set)+1):
@@ -11,7 +11,7 @@ def print_powerset(set):
 
 
 try:
-    inp = input()
+    inp = sys.stdin.readline()
     print_powerset(inp.replace(" ", ""))
 except:
     pass
